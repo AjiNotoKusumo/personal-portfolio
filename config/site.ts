@@ -4,7 +4,7 @@ export const siteConfig = {
   username: "ajinotokusumo",
   description:
     "Aji Noto Kusumo - Full-stack developer with hands-on experience building AI-powered applications, real-time systems, and scalable web platforms using modern web tools.",
-  url: "https://nbarkiya.xyz",
+  url: "https://aji-noto-kusumo.vercel.app",
   links: {
     github: "https://github.com/AjiNotoKusumo",
     templateRepo: "https://github.com/namanbarkiya/minimal-next-portfolio",
