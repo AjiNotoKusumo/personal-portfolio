@@ -13,8 +13,8 @@ export const metadata: Metadata = {
 export default function ContributonsPage() {
   return (
     <PageContainer
-      title={pagesConfig.contributions.title}
-      description={pagesConfig.contributions.description}
+      title={pagesConfig.certifications.title}
+      description={pagesConfig.certifications.description}
     >
       <ContributionCard
         contributions={contributionsUnsorted}

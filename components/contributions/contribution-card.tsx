@@ -35,10 +35,10 @@ export default function ContributionCard({
                     {contribution.repo}
                   </span>
                 </h3>
-                <Icons.gitBranch
+                {/* <Icons.gitBranch
                   size={18}
                   className="flex-shrink-0 sm:w-5 sm:h-5"
-                />
+                /> */}
               </div>
               <div className="space-y-3 sm:space-y-4 min-w-0">
                 <p className="text-xs sm:text-sm text-muted-foreground line-clamp-3 break-words">

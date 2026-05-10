@@ -22,11 +22,13 @@ import { featuredSkills } from "@/config/skills";
 import { getFeaturedBlogs } from "@/lib/blogs";
 import { cn } from "@/lib/utils";
 import profileImg from "@/public/profile-img.jpg";
+import { educations } from "@/config/education";
+import EducationCard from "@/components/education/education-card";
 
 export const metadata: Metadata = {
   title: `${pagesConfig.home.metadata.title}`,
   description:
-    "Naman Barkiya - Applied AI Engineer working at the intersection of AI, data, and scalable software systems. Explore my projects, experience, and contributions.",
+    "Aji Noto Kusumo - Full-stack developer with hands-on experience building AI-powered applications, real-time systems, and scalable web platforms using modern web tools.",
   alternates: {
     canonical: siteConfig.url,
   },
@@ -41,8 +43,8 @@ export default function IndexPage() {
     name: siteConfig.authorName,
     url: siteConfig.url,
     image: siteConfig.ogImage,
-    jobTitle: "Applied AI Engineer",
-    sameAs: [siteConfig.links.github, siteConfig.links.twitter],
+    jobTitle: "Full Stack Developer & AI Enthusiast",
+    sameAs: [siteConfig.links.github],
   };
 
   // Structured data for website as a software application (template)
@@ -85,7 +87,7 @@ export default function IndexPage() {
             width={100}
             sizes="100vw"
             className="bg-primary rounded-full mb-0 h-auto md:mb-2 w-[60%] max-w-[16rem] border-8 border-primary"
-            alt="Naman Barkiya - Applied AI Engineer Portfolio"
+            alt="Aji Noto Kusumo - Full Stack Developer & AI Enthusiast Portfolio"
             priority
           />
           <AnimatedText
@@ -93,19 +95,18 @@ export default function IndexPage() {
             delay={0.2}
             className="font-heading text-3xl sm:text-5xl md:text-6xl lg:text-7xl"
           >
-            Naman Barkiya
+            Aji Noto Kusumo
           </AnimatedText>
           <AnimatedText
             as="h3"
             delay={0.4}
             className="font-heading text-base sm:text-xl md:text-xl lg:text-2xl"
           >
-            Applied AI Engineer
+            Full Stack Developer & AI Enthusiast
           </AnimatedText>
           <div className="mt-4 max-w-[42rem] text-center">
             <p className="leading-normal text-muted-foreground text-sm sm:text-base">
-              Software engineer working at the intersection of AI, data, and
-              scalable software systems.
+              Full-stack developer with hands-on experience building AI-powered applications, real-time systems, and scalable web platforms using modern web tools.
             </p>
           </div>
 
@@ -130,7 +131,7 @@ export default function IndexPage() {
                     size: "lg",
                   })
                 )}
-                aria-label="Contact Naman Barkiya"
+                aria-label="Contact Aji Noto Kusumo"
               >
                 <Icons.contact className="w-4 h-4 mr-2" /> Contact
               </Link>
@@ -186,6 +187,35 @@ export default function IndexPage() {
       <AnimatedSection
         direction="up"
         className="container space-y-6 py-10 my-14"
+        id="skills"
+      >
+        <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center">
+          <AnimatedText
+            as="h2"
+            className="font-heading text-3xl leading-[1.1] sm:text-3xl md:text-6xl"
+          >
+            {pagesConfig.skills.title}
+          </AnimatedText>
+          <AnimatedText
+            as="p"
+            delay={0.2}
+            className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7"
+          >
+            {pagesConfig.skills.description}
+          </AnimatedText>
+        </div>
+        <SkillsCard skills={featuredSkills} />
+        <AnimatedText delay={0.4} className="flex justify-center">
+          <Link href="/skills">
+            <Button variant={"outline"} className="rounded-xl">
+              <Icons.chevronDown className="mr-2 h-4 w-4" /> View All
+            </Button>
+          </Link>
+        </AnimatedText>
+      </AnimatedSection>
+      <AnimatedSection
+        direction="up"
+        className="container space-y-6 bg-muted py-10 my-14"
         id="experience"
       >
         <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center">
@@ -224,34 +254,44 @@ export default function IndexPage() {
       </AnimatedSection>
       <AnimatedSection
         direction="up"
-        className="container space-y-6 bg-muted py-10 my-14"
-        id="contributions"
+        className="container space-y-6 py-10 my-14"
+        id="education"
       >
         <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center">
           <AnimatedText
             as="h2"
             className="font-heading text-3xl leading-[1.1] sm:text-3xl md:text-6xl"
           >
-            {pagesConfig.contributions.title}
+            {pagesConfig.education.title}
           </AnimatedText>
           <AnimatedText
             as="p"
             delay={0.2}
             className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7"
           >
-            {pagesConfig.contributions.description}
+            {pagesConfig.education.description}
           </AnimatedText>
         </div>
-        <ContributionCard contributions={featuredContributions} />
+        <div className="mx-auto grid justify-center gap-4 md:w-full lg:grid-cols-3">
+          {educations.slice(0, 3).map((education, index) => (
+            <AnimatedSection
+              key={education.id}
+              delay={0.1 * (index + 1)}
+              direction="up"
+            >
+              <EducationCard education={education} />
+            </AnimatedSection>
+          ))}
+        </div>
         <AnimatedText delay={0.4} className="flex justify-center">
-          <Link href="/contributions">
+          <Link href="/education">
             <Button variant={"outline"} className="rounded-xl">
               <Icons.chevronDown className="mr-2 h-4 w-4" /> View All
             </Button>
           </Link>
         </AnimatedText>
       </AnimatedSection>
-      <AnimatedSection
+      {/* <AnimatedSection
         direction="up"
         className="container space-y-6 py-10 my-14"
         id="blogs"
@@ -290,36 +330,37 @@ export default function IndexPage() {
             </Button>
           </Link>
         </AnimatedText>
-      </AnimatedSection>
+      </AnimatedSection> */}
       <AnimatedSection
         direction="up"
         className="container space-y-6 bg-muted py-10 my-14"
-        id="skills"
+        id="certifications"
       >
         <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center">
           <AnimatedText
             as="h2"
             className="font-heading text-3xl leading-[1.1] sm:text-3xl md:text-6xl"
           >
-            {pagesConfig.skills.title}
+            {pagesConfig.certifications.title}
           </AnimatedText>
           <AnimatedText
             as="p"
             delay={0.2}
             className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7"
           >
-            {pagesConfig.skills.description}
+            {pagesConfig.certifications.description}
           </AnimatedText>
         </div>
-        <SkillsCard skills={featuredSkills} />
+        <ContributionCard contributions={featuredContributions} />
         <AnimatedText delay={0.4} className="flex justify-center">
-          <Link href="/skills">
+          <Link href="/contributions">
             <Button variant={"outline"} className="rounded-xl">
               <Icons.chevronDown className="mr-2 h-4 w-4" /> View All
             </Button>
           </Link>
         </AnimatedText>
       </AnimatedSection>
+      
     </ClientPageWrapper>
   );
 }

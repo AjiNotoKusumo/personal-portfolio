@@ -1,30 +1,27 @@
 export const siteConfig = {
-  name: "Naman Barkiya - Applied AI Engineer",
-  authorName: "Naman Barkiya",
-  username: "namanbarkiya",
+  name: "Aji Noto Kusumo - Full Stack Developer & AI Enthusiast",
+  authorName: "Aji Noto Kusumo",
+  username: "ajinotokusumo",
   description:
-    "Naman Barkiya - Applied AI Engineer working at the intersection of AI, data, and scalable software systems. Explore my projects, experience, and contributions in software development and AI.",
+    "Aji Noto Kusumo - Full-stack developer with hands-on experience building AI-powered applications, real-time systems, and scalable web platforms using modern web tools.",
   url: "https://nbarkiya.xyz",
   links: {
-    twitter: "https://x.com/namanbarkiya",
-    github: "https://github.com/namanbarkiya",
+    github: "https://github.com/AjiNotoKusumo",
     templateRepo: "https://github.com/namanbarkiya/minimal-next-portfolio",
   },
   ogImage:
-    "https://res.cloudinary.com/dvt5vkfwz/image/upload/v1767384721/naman_portfolio_og_image.png",
+    "https://res.cloudinary.com/djwg7ocsw/image/upload/v1778438778/Screenshot_2026-05-11_014531_h9qzxq.png",
   iconIco:
-    "https://res.cloudinary.com/dbfvcn3f6/image/upload/v1692357384/assets/naman-favicon.ico",
+    "https://res.cloudinary.com/djwg7ocsw/image/upload/v1778438633/favicon_lymalt.ico",
   logoIcon:
-    "https://res.cloudinary.com/dbfvcn3f6/image/upload/v1692357294/assets/naman-logo.png",
+    "https://res.cloudinary.com/djwg7ocsw/image/upload/v1778438567/portfolio-logo_mb4ybk.png",
   keywords: [
-    "Naman Barkiya",
+    "Aji Noto Kusumo",
     "Applied AI Engineer",
     "AI Engineer",
     "Software Engineer",
     "Full Stack Developer",
-    "Machine Learning",
     "Data Engineering",
-    "UBS",
     "Python Developer",
     "React Developer",
     "Next.js Developer",

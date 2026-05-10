@@ -4,25 +4,21 @@ export const routesConfig: any = {
       title: "Projects",
       href: "/projects",
     },
+        {
+      title: "Skills",
+      href: "/skills",
+    },
     {
       title: "Experience",
       href: "/experience",
     },
     {
-      title: "Contributions",
-      href: "/contributions",
+      title: "Education",
+      href: "/education",
     },
     {
-      title: "Skills",
-      href: "/skills",
-    },
-    {
-      title: "Blogs",
-      href: "/blogs",
-    },
-    {
-      title: "Community",
-      href: "/community",
+      title: "Certifications",
+      href: "/certifications",
     },
     {
       title: "Contact",

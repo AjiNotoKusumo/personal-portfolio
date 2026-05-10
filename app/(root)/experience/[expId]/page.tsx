@@ -92,13 +92,13 @@ export default async function ExperienceDetailPage({
       ),
     },
     {
-      value: "achievements",
-      label: "Achievements",
+      value: "results",
+      label: "Results",
       content: (
         <AnimatedSection delay={0.3}>
           <div>
             <h3 className="font-semibold mb-4 text-sm uppercase tracking-wide text-muted-foreground">
-              Key Achievements
+              Key Results
             </h3>
             <ul className="space-y-3">
               {experience.achievements.map((achievement, idx) => (

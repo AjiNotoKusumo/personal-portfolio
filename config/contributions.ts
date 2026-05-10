@@ -7,39 +7,39 @@ export interface contributionsInterface {
 
 export const contributionsUnsorted: contributionsInterface[] = [
   {
-    repo: "minimal-next-portfolio",
+    repo: "React (Basic)",
     contibutionDescription:
-      "Open-source Next.js portfolio template. Trusted and forked by developers worldwide (130+ GitHub stars).",
-    repoOwner: "namanbarkiya",
-    link: "https://github.com/namanbarkiya/minimal-next-portfolio",
+      "Covers topics like Basic Routing, Rendering Elements,State Management, Handling Events, ES6 JavaScript and Form Validation.",
+    repoOwner: "HackerRank",
+    link: "https://www.hackerrank.com/certificates/86402d6d05c0",
   },
   {
-    repo: "niya-saas-template",
+    repo: "JavaScript (Basic)",
     contibutionDescription:
-      "Modern Next.js SaaS template. Production-ready starter for devs and AI startups (30+ GitHub stars).",
-    repoOwner: "namanbarkiya",
-    link: "https://github.com/namanbarkiya/niya-saas-template",
+      "Covers topics like Functions, Currying, Hoisting, Scope, Inheritance, Events and Error Handling.",
+    repoOwner: "HackerRank",
+    link: "https://www.hackerrank.com/certificates/9f3fb06242c7",
   },
   {
-    repo: "autogen",
+    repo: "Software Engineer Intern",
     contibutionDescription:
-      "Improved the gallery component to showcase the community work.",
-    repoOwner: "Microsoft",
-    link: "https://github.com/microsoft/autogen/pull/1445",
+      "Covers topics like Problem solving and SQL.",
+    repoOwner: "HackerRank",
+    link: "https://www.hackerrank.com/certificates/f0422a47e2ff",
   },
   {
-    repo: "creativecommons",
+    repo: "Problem Solving (Basic)",
     contibutionDescription:
-      "Closed Issue: Fixed navbar issue on the main website of creative common.",
-    repoOwner: "Creative Commons",
-    link: "https://github.com/creativecommons/creativecommons.github.io-source/pull/738",
+      "Covers basic topics of Data Structures (such as Arrays, Strings) and Algorithms (such as Sorting and Searching).",
+    repoOwner: "HackerRank",
+    link: "https://www.hackerrank.com/certificates/6cea336d022c",
   },
   {
-    repo: "creativecommons",
+    repo: "CSS (Basic)",
     contibutionDescription:
-      "Added section for 'Other Opportunities' on main page.",
-    repoOwner: "Creative Commons",
-    link: "https://github.com/creativecommons/creativecommons.github.io-source/pull/719",
+      "Covers topics like Cascading and Inheritance, text styling fundamentals, layouts in CSS, understand the boxing of elements in CSS.",
+    repoOwner: "HackerRank",
+    link: "https://www.hackerrank.com/certificates/9a51fa31884f",
   },
 ];
 

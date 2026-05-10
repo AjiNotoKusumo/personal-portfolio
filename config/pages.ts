@@ -18,7 +18,7 @@ export const pagesConfig: PagesConfig = {
     description: "Welcome to my portfolio website.",
     metadata: {
       title: "Home",
-      description: "Naman Barkiya's portfolio website.",
+      description: "Aji Noto Kusumo's portfolio website.",
     },
   },
   skills: {
@@ -27,7 +27,7 @@ export const pagesConfig: PagesConfig = {
     metadata: {
       title: "Skills",
       description:
-        "Naman Barkiya's key skills that define his professional identity.",
+        "Aji Noto Kusumo's key skills that define his professional identity.",
     },
   },
   projects: {
@@ -35,7 +35,7 @@ export const pagesConfig: PagesConfig = {
     description: "Showcasing impactful projects and technical achievements.",
     metadata: {
       title: "Projects",
-      description: "Naman Barkiya's projects in building web applications.",
+      description: "Aji Noto Kusumo's projects in building web applications.",
     },
   },
   contact: {
@@ -43,7 +43,7 @@ export const pagesConfig: PagesConfig = {
     description: "Let's connect and explore collaborations.",
     metadata: {
       title: "Contact",
-      description: "Contact Naman Barkiya.",
+      description: "Contact Aji Noto Kusumo.",
     },
   },
   contributions: {
@@ -52,15 +52,15 @@ export const pagesConfig: PagesConfig = {
     metadata: {
       title: "Contributions",
       description:
-        "Naman Barkiya's open-source contributions and community involvement.",
+        "Aji Noto Kusumo's open-source contributions and community involvement.",
     },
   },
   resume: {
     title: "Resume",
-    description: "Naman Barkiya's resume.",
+    description: "Aji Noto Kusumo's resume.",
     metadata: {
       title: "Resume",
-      description: "Naman Barkiya's resume.",
+      description: "Aji Noto Kusumo's resume.",
     },
   },
   blogs: {
@@ -70,7 +70,7 @@ export const pagesConfig: PagesConfig = {
     metadata: {
       title: "Blogs",
       description:
-        "Naman Barkiya's blog — thoughts on AI, software engineering, and building in public.",
+        "Aji Noto Kusumo's blog — thoughts on AI, software engineering, and building in public.",
     },
   },
   experience: {
@@ -79,7 +79,25 @@ export const pagesConfig: PagesConfig = {
     metadata: {
       title: "Experience",
       description:
-        "Naman Barkiya's professional journey and experience timeline.",
+        "Aji Noto Kusumo's professional journey and experience timeline.",
+    },
+  },
+  certifications: {
+    title: "Certifications",
+    description: "Professional certifications and achievements.",
+    metadata: {
+      title: "Certifications",
+      description:
+        "Aji Noto Kusumo's professional certifications and achievements.",
+    },
+  },
+  education: {
+    title: "Education",
+    description: "Academic background and educational achievements.",
+    metadata: {
+      title: "Education",
+      description:
+        "Aji Noto Kusumo's academic background and educational achievements.",
     },
   },
 };

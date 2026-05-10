@@ -60,7 +60,22 @@ export type ValidSkills =
   | "FastAPI"
   | "SQL"
   | "NoSQL"
-  | "Framer Motion";
+  | "Framer Motion"
+  | "BetterAuth"
+  | "Cloudinary"
+  | "Gemini API"
+  | "Expo"
+  | "Apollo Server"
+  | "Sequelize"
+  | "Rest API"
+  | "Statistics"
+  | "Data Cleaning"
+  | "Microsoft Excel"
+  | "PowerPoint"
+  | "Arduino"
+  | "IoT"
+  | "System Design"
+  | "Problem Solving";
 
 export type ValidCategory =
   | "Full Stack"
@@ -81,4 +96,6 @@ export type ValidPages =
   | "contact"
   | "contributions"
   | "resume"
-  | "blogs";
+  | "blogs"
+  | "certifications"
+  | "education";

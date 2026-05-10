@@ -7,22 +7,17 @@ interface SkillsCardProps {
 
 export default function SkillsCard({ skills }: SkillsCardProps) {
   return (
-    <div className="mx-auto grid justify-center gap-4 sm:grid-cols-2 lg:grid-cols-3">
+    <div className="mx-auto grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
       {skills.map((skill, id) => (
         <div
           key={id}
-          className="relative overflow-hidden rounded-lg border bg-background p-2"
+          className="flex items-center gap-3 rounded-xl border bg-background px-4 py-4 transition-all hover:border-primary/40 hover:shadow-md"
         >
-          <div className="flex h-[230px] flex-col justify-between rounded-md p-6 sm:h-[230px]">
-            <skill.icon size={50} />
-            <div className="space-y-2">
-              <h3 className="font-bold">{skill.name}</h3>
-              <p className="text-sm text-muted-foreground">
-                {skill.description}
-              </p>
-              <Rating stars={skill.rating} />
-            </div>
-          </div>
+          <skill.icon size={32} className="shrink-0" />
+
+          <h3 className="text-sm font-semibold">
+            {skill.name}
+          </h3>
         </div>
       ))}
     </div>
