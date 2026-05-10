@@ -1,6 +1,6 @@
 import "./globals.css";
 
-import { GoogleAnalytics } from "@next/third-parties/google";
+// import { GoogleAnalytics } from "@next/third-parties/google";
 import { Inter as FontSans } from "next/font/google";
 import localFont from "next/font/local";
 import Script from "next/script";
@@ -138,7 +138,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
           strategy="afterInteractive"
         /> */}
       </body>
-      <GoogleAnalytics gaId={GA_ID} />
+      {/* <GoogleAnalytics gaId={GA_ID} /> */}
     </html>
   );
 }
