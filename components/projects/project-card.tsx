@@ -38,12 +38,39 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           </Button>
         </Link>
       </div>
-      <div className="absolute bottom-4 right-4 p-3 rounded-full bg-background border border-border hidden md:block">
-        {project.type === "Personal" ? (
-          <Icons.userFill className="h-4 w-4" />
-        ) : (
-          <Icons.work className="h-4 w-4" />
+      <div className="absolute bottom-4 right-4 flex items-center gap-2 hidden md:flex">
+        {/* Github Link */}
+        {project.githubLink && (
+          <a
+            href={project.githubLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-3 rounded-full bg-background border border-border hover:bg-muted transition-colors"
+          >
+            <Icons.gitHub className="h-5 w-5 text-muted-foreground hover:text-foreground" />
+          </a>
         )}
+
+        {/* Live Demo Link */}
+        {project.websiteLink && (
+          <a
+            href={project.websiteLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-3 rounded-full bg-background border border-border hover:bg-muted transition-colors"
+          >
+            <Icons.externalLink className="h-5 w-5 text-muted-foreground hover:text-foreground" />
+          </a>
+        )}
+
+        {/* Project Type Icon */}
+        <div className="p-3 rounded-full bg-background border border-border">
+          {project.type === "Personal" ? (
+            <Icons.userFill className="h-4 w-4" />
+          ) : (
+            <Icons.work className="h-4 w-4" />
+          )}
+        </div>
       </div>
     </div>
   );

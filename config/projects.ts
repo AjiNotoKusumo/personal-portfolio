@@ -148,13 +148,31 @@ export const Projects: ProjectInterface[] = [
     githubLink: "https://github.com/AjiNotoKusumo/Hack-Tube",
     startDate: new Date("2026-03-02"),
     endDate: new Date("2026-03-08"),
-    companyLogoImg: "/projects/convot/logo.png",
+    companyLogoImg: "/projects/hacktube/post-page.jpg",
     pagesInfoArr: [
       {
-        title: "Ingestion & Retrieval",
+        title: "Post List and Detail Page",
         description:
-          "Designed ingestion and retrieval pipelines supporting multiple content sources with secure tenant isolation.",
-        imgArr: ["/logo.png"],
+          "Browse post from a variety of sources and view detailed information about each post.",
+        imgArr: ["/projects/hacktube/post-page.jpg"],
+      },
+      {
+        title: "Authentication System",
+        description:
+          "Complete authentication system using JWT tokens that through GraphQL API.",
+        imgArr: ["/projects/hacktube/auth.jpg"],
+      },
+      {
+        title: "Post Creation Page",
+        description:
+          "Create and share new posts with your followers and the public.",
+        imgArr: ["/projects/hacktube/creation.jpg"],
+      },
+      {
+        title: "Search and Profile Page",
+        description:
+          "Search for users, view their profiles, and follow each other.",
+        imgArr: ["/projects/hacktube/user.jpg"],
       },
     ],
     descriptionDetails: {
